@@ -46,7 +46,9 @@ main {
     margin: 20px 0;
 }
 
-mainheading {}
+mainheading {
+    color: black;
+}
 
 footer {
     background-color: #333;

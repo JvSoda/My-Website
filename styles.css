@@ -46,8 +46,8 @@ main {
     margin: 20px 0;
 }
 
-mainheading {
-    color: black;
+.mainheading {
+    color: black !important;
 }
 
 footer {

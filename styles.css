@@ -58,3 +58,47 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+#login-container {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#login-form input {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #45a049;
+}
+
+/* If you use any background images, ensure they use HTTPS or relative paths, for example: */
+/*
+body {
+    background-image: url('https://example.com/background.jpg');
+}
+*/
+
+/* If you import any fonts, use HTTPS, for example: */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*/
+
+/* Rest of your CSS remains the same */

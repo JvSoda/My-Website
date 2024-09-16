@@ -1,5 +1,9 @@
 function appendToDisplay(value) {
-    document.getElementById('display').value += value;
+    let display = document.getElementById('display');
+    if (display.value === 'Error') {
+        display.value = '';
+    }
+    display.value += value;
 }
 
 function clearDisplay() {
@@ -8,7 +12,11 @@ function clearDisplay() {
 
 function deleteLastChar() {
     let display = document.getElementById('display');
-    display.value = display.value.slice(0, -1);
+    if (display.value === 'Error') {
+        display.value = '';
+    } else {
+        display.value = display.value.slice(0, -1);
+    }
 }
 
 function calculate() {
@@ -22,22 +30,38 @@ function calculate() {
 
 function sin() {
     let display = document.getElementById('display');
-    display.value = Math.sin(eval(display.value));
+    if (display.value === 'Error') {
+        display.value = '';
+    } else {
+        display.value = Math.sin(eval(display.value));
+    }
 }
 
 function cos() {
     let display = document.getElementById('display');
-    display.value = Math.cos(eval(display.value));
+    if (display.value === 'Error') {
+        display.value = '';
+    } else {
+        display.value = Math.cos(eval(display.value));
+    }
 }
 
 function tan() {
     let display = document.getElementById('display');
-    display.value = Math.tan(eval(display.value));
+    if (display.value === 'Error') {
+        display.value = '';
+    } else {
+        display.value = Math.tan(eval(display.value));
+    }
 }
 
 function log() {
     let display = document.getElementById('display');
-    display.value = Math.log10(eval(display.value));
+    if (display.value === 'Error') {
+        display.value = '';
+    } else {
+        display.value = Math.log10(eval(display.value));
+    }
 }
 
 function power() {
@@ -46,7 +70,11 @@ function power() {
 
 function sqrt() {
     let display = document.getElementById('display');
-    display.value = Math.sqrt(eval(display.value));
+    if (display.value === 'Error') {
+        display.value = '';
+    } else {
+        display.value = Math.sqrt(eval(display.value));
+    }
 }
 
 function toBinary() {

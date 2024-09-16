@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game - JV's Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>JV's Tools</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="blackjack.html">Blackjack</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Blackjack Game</h2>
+        <div id="game-container">
+            <div id="dealer-hand">
+                <h3>Dealer's Hand: <span id="dealer-score"></span></h3>
+                <div id="dealer-cards"></div>
+            </div>
+            <div id="player-hand">
+                <h3>Your Hand: <span id="player-score"></span></h3>
+                <div id="player-cards"></div>
+            </div>
+            <div id="game-controls">
+                <button id="hit-button">Hit</button>
+                <button id="stand-button">Stand</button>
+                <button id="new-game-button">New Game</button>
+            </div>
+            <div id="game-message"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 JV's Tools. All rights reserved.</p>
+    </footer>
+    <script src="blackjack.js"></script>
+</body>
+</html>
